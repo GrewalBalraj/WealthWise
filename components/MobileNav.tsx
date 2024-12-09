@@ -39,7 +39,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               height={34}
               alt="WealthWise logo"
             />
-            <h1 className="text-26 font-ibm-plx-serif font-bold text-black-1"> WealthWise </h1>
+            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1"> WealthWise </h1>
           </Link>
 
           <div className="mobilenav-sheet">
@@ -65,7 +65,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                               'brightness-[3] invert-0': isActive
                             })}
                           />
-                        <p className={cn("text-16 font-semibold text-black2", {"!text-white": isActive})}>
+                        <p className={cn("text-16 font-semibold text-black-2", {"text-white": isActive})}>
                             {item.label}
                         </p>
                       </Link>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import Footer from './Footer'
+import PlaidLink from './PlaidLink'
 
 const Sidebar = ({ user }: SiderbarProps) => {
 
@@ -20,8 +21,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
             width={34}
             height={34}
             alt="WealthWise logo"
-            className="size-[24px]
-            max-xl:size-14"
+            className="size-[24px] max-xl:size-14"
           />
           <h1 className="sidebar-logo"> WealthWise </h1>
         </Link>
@@ -51,10 +51,10 @@ const Sidebar = ({ user }: SiderbarProps) => {
             )
         })}
 
-        USER
+        <PlaidLink user={user}/>
       </nav>
       
-      {<Footer user={user}/>}
+      <Footer user={user}/>
     </section>
   )
 }
